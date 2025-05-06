@@ -30,9 +30,21 @@ L’objectif est de fournir une plateforme simple et intuitive pour accompagner 
 
 - **Frontend** : [Next.js](https://nextjs.org/)  
 - **UI Kit** : [shadcn/ui](https://ui.shadcn.com/)  
-- **Backend** : API Node.js
-- **Base de données** : PostgreSQL 
-- **Authentification** : NextAuth.js
-- **Temps réel** : WebSocket ou autre (pour le chat direct)  
-- **Styling** : TailwindCSS (intégré avec shadcn)
+- **Backend & base de données** : [Supabase](https://supabase.io/) (PostgreSQL, Auth, Storage, Realtime)  
+- **Authentification** : Supabase Auth 
+- **Temps réel** : Supabase Realtime pour le chat et les événements dynamiques  
+- **Déploiement** : Vercel
 ---
+
+
+## Les différentes pages du projet
+
+* Se connecter
+* Créer un compte
+* Mot de passe publié
+* Réinitialiser son mot de passe
+* Tableau de board
+* Messageries
+* Gestion des tâches
+* Calendrier
+* Mon profil
