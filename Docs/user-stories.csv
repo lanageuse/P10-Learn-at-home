@@ -1,0 +1,379 @@
+﻿DESCRIPTION,CRITÈRES D'ACCEPTATION,STATUS,Sous-élément,élément parent
+"En tant qu’utilisateur, je veux pouvoir changer mon image de profil, afin de personnaliser mon compte.","Étant donné que je suis sur ma page profil
+Alors je vois l’image de profil actuelle affichée
+Et un bouton ou une icône ""Modifier l’image"" est disponible
+
+Étant donné que je clique sur ""Modifier l’image""
+Quand je téléverse une nouvelle image valide
+Et que je valide
+Alors la nouvelle image de profil est enregistrée et affichée immédiatement
+
+Étant donné que je téléverse une image
+Quand le format ou la taille ne respecte pas les contraintes définies (par exemple poids maximal ou type de fichier)
+Alors un message d’erreur m’indique les règles à respecter",,,
+"En tant qu’utilisateur, je veux pouvoir changer mon mot de passe, afin de sécuriser mon compte.","Étant donné que je suis sur ma page profil
+Quand je clique sur le bouton ""Changer le mot de passe""
+Alors un formulaire spécifique s’affiche avec les champs :
+ - Ancien mot de passe
+ - Nouveau mot de passe
+ - Confirmation du nouveau mot de passe
+
+Étant donné que je remplis correctement tous les champs du formulaire
+Quand je valide le changement
+Alors le mot de passe est mis à jour
+Et un message de confirmation s’affiche
+
+Étant donné que je remplis le formulaire avec des erreurs (par exemple ancien mot de passe incorrect ou confirmation non identique)
+Quand je valide
+Alors un message d’erreur m’indique précisément le problème",,,
+"En tant qu’utilisateur, je veux pouvoir modifier les informations de mon profil, afin de les maintenir à jour.","Étant donné que je suis sur ma page profil
+Quand je clique sur le bouton ""Modifier""
+Alors un formulaire s’affiche pré-rempli avec mes informations actuelles
+
+Étant donné que je modifie une ou plusieurs informations dans le formulaire
+Quand je valide les changements
+Alors les nouvelles informations sont enregistrées
+Et elles sont immédiatement visibles sur ma page profil
+
+Étant donné que je suis sur le formulaire de modification
+Quand je tente de valider sans renseigner les champs obligatoires (par exemple le nom ou l’adresse e-mail)
+Alors un message d’erreur s’affiche m’indiquant les champs manquants",,,
+"En tant qu’utilisateur, je veux voir ma page profil, afin de consulter mes informations personnelles.","Étant donné que je suis connecté
+Quand j’accède à ma page profil
+Alors je vois mes informations personnelles affichées, incluant :
+- Nom
+- Adresse e-mail
+- Rôle (élève, tuteur)
+- Photo de profil",,,
+"En tant qu’utilisateur, je veux voir combien de messages je n’ai pas encore lus, afin de répondre rapidement à mes correspondants.","Étant donné que je consulte mon tableau de bord
+Alors je vois clairement le nombre total de messages non lus
+
+Étant donné que je consulte mon tableau de bord
+Alors je vois un lien ou un bouton permettant d’accéder directement à la messagerie ou au chat
+
+Étant donné que des messages sont lus ou que de nouveaux messages arrivent
+Alors le compteur de messages non lus se met à jour en temps réel
+Ou il se met à jour au rechargement de la page",,,
+"En tant qu’utilisateur, je veux voir les événements ou rendez-vous à venir, afin de me préparer à temps.","Étant donné que je consulte la section des événements à venir
+Alors je vois la liste des événements prévus pour la semaine (ou selon la période personnalisée définie)
+
+Étant donné que des événements sont listés
+Alors chaque événement affiche le titre, la date et l’heure
+
+Étant donné que je consulte la section des événements à venir
+Alors je vois un lien ou un bouton permettant d’accéder au calendrier complet
+
+Étant donné qu’aucun événement n’est prévu dans la période définie
+Alors un message s’affiche indiquant ""Pas d’événements prévus”",,,
+"En tant qu’utilisateur, je veux voir un résumé de mes tâches, afin de savoir ce qu’il me reste à faire rapidement.","
+Étant donné que j’ai des tâches en cours
+Quand je consulte le résumé des tâches
+Alors je vois une liste des 3 à 5 prochaines tâches (ou des plus urgentes)
+
+Étant donné que je consulte le résumé des tâches
+Quand je clique sur une tâche dans la liste
+Alors je suis redirigé vers la page de gestion des tâches correspondante
+
+Étant donné que je consulte le résumé des tâches
+Et qu’aucune tâche n’est en cours
+Alors un message s’affiche indiquant ""Aucune tâche à faire”",,,
+"En tant qu’élève ou tuteur, Je veux voir un tableau de bord personnalisé, Afin de visualiser rapidement les informations clés de mon compte.","Étant donné que je suis connecté en tant qu’élève ou bénévole
+Quand je me connecte à mon compte ou que je clique sur le menu ""Tableau de bord""
+Alors le tableau de bord s’affiche
+
+Étant donné que je consulte le tableau de bord
+Alors je vois les sections suivantes :
+Récapitulatif des tâches
+Liste des prochains événements
+Compteur de messages non lus
+
+Étant donné que je consulte le tableau de bord
+Alors le contenu affiché est personnalisé selon mon profil (élève ou bénévole)
+Et seules les informations qui me concernent sont affichées",,,
+"En tant que tuteur, je veux modifier une tâche que j’ai créée pour un élève, afin de corriger ou ajuster un objectif donné.","Étant donné que je consulte la liste des tâches d’un élève
+Alors je vois un bouton ou une icône ""Modifier"" uniquement sur les tâches que j’ai moi-même créées
+Et je ne vois pas de bouton ""Modifier"" sur les tâches créées par l’élève
+
+Étant donné que je clique sur le bouton ""Modifier"" d’une de mes tâches
+Alors un formulaire s’affiche pré-rempli avec le titre, la description et l’échéance actuels de la tâche
+
+Étant donné que je suis sur le formulaire de modification d’une de mes tâches
+Et que je modifie au moins un champ (titre, description ou échéance)
+Quand je valide le formulaire
+Alors les modifications sont enregistrées
+Et la tâche mise à jour est immédiatement visible dans la liste des tâches de l’élève
+
+Étant donné que je suis sur le formulaire de modification d’une de mes tâches
+Quand je tente de valider sans renseigner le titre ou l’échéance
+Alors un message d’erreur s’affiche indiquant que le titre et l’échéance sont obligatoires",,,
+"En tant que tuteur, je veux supprimer une tâche que j’ai créée pour un élève, afin de corriger ou annuler un objectif donné.","
+Étant donné que je consulte la liste des tâches d’un élève
+Alors je vois un bouton ou une icône ""Supprimer"" uniquement sur les tâches que j’ai moi-même créées
+Et je ne vois pas de bouton ""Supprimer"" sur les tâches créées par l’élève
+
+Étant donné que je clique sur le bouton ""Supprimer"" d’une de mes tâches
+Alors une confirmation de suppression m’est demandée
+
+Étant donné qu’une confirmation de suppression est affichée
+Quand je confirme la suppression
+Alors la tâche disparaît immédiatement de la liste des tâches de l’élève",,,
+"En tant que tuteur, je veux pouvoir ajouter une tâche à un élève que je suis, afin de lui assigner du travail ou des objectif","Étant donné que je consulte la liste des tâches d’un élève que je suis
+Alors je vois un bouton ""Ajouter une tâche""
+
+Étant donné que je clique sur le bouton ""Ajouter une tâche""
+Alors un formulaire d’ajout s’affiche
+Et l’élève concerné est déjà sélectionné et non modifiable
+
+Étant donné que je remplis le formulaire avec un titre, une description et une échéance valides
+Quand je valide le formulaire
+Alors la tâche est enregistrée et visible immédiatement dans la liste des tâches de l’élève
+Et l’élève voit que la tâche a été créée par son bénévole
+
+Étant donné que des tâches ont été créées par l’élève et par le bénévole
+Quand je consulte la liste des tâches
+Alors pour chaque tâche, le nom du créateur (élève ou bénévole) est affiché",,,
+"En tant que tuteur, je veux voir les tâches d’un élève que je suis, afin de suivre ses progrès et l’aider.","Étant donné que je suis connecté en tant que bénévole
+Et que je consulte la page des tâches d’un élève que je suis
+Alors je vois la liste des tâches affichée de la même manière que l’élève la voit (titre, description, échéance, statut)
+
+Étant donné que je consulte la liste des tâches d’un élève
+Alors je vois un bouton ""Modifier"" uniquement sur les tâches que j’ai créées en tant que bénévole
+Et je ne vois pas de bouton ""Modifier"" ni ""Supprimer"" sur les tâches créées par l’élève",,,
+"En tant que tuteur, je veux voir la liste des élèves que je suis, afin de gérer leurs tâches individuellement.","Étant donné que je suis connecté en tant que bénévole
+Quand j’accède à la section ""Mes élèves""
+Alors je vois la liste de tous les élèves qui me sont attribués
+
+Étant donné que je consulte la liste des élèves attribués
+Alors pour chaque élève je vois son nom, son niveau et le nombre total de tâches qui lui sont assignées
+
+Étant donné que je consulte la liste des élèves attribués
+Quand je clique sur le nom ou le bouton associé à un élève
+Alors j’accède à la liste détaillée des tâches de cet élève",,,
+"En tant qu’élève, je ne peux pas supprimer ni modifier les tâches qui m’ont été assignées par un tuteur, afin de garantir que seules les personnes autorisées puissent les gérer.","Étant donné que je suis connecté en tant qu’élève
+Et qu’une tâche m’a été assignée par un tuteur
+Alors je ne vois pas le bouton ou l’icône ""Supprimer"" sur cette tâche
+
+Étant donné que je suis connecté en tant qu’élève
+Et qu’une tâche m’a été assignée par un tuteur
+Alors je ne vois pas le bouton ou l’icône ""Modifier"" sur cette tâche
+
+Étant donné que je suis connecté en tant qu’élève
+Quand je tente d’accéder directement à la suppression d’une tâche assignée par un tuteur (par exemple via l’URL)
+Alors l’action est refusée et un message d’erreur m’est affiché
+
+Étant donné que je suis connecté en tant qu’élève
+Quand je tente d’accéder directement à la modification d’une tâche assignée par un tuteur (par exemple via l’URL)
+Alors l’action est refusée et un message d’erreur m’est affiché",,,
+"En tant qu’utilisateur, je veux pouvoir modifier une tâche que j'ai crée afin de corriger ou mettre à jour ses informations","Étant donné que je consulte la liste des tâches
+Alors je vois une icône ou un bouton ""Modifier"" sur chaque tâche
+
+Étant donné que je clique sur le bouton ""Modifier"" d’une tâche
+Alors un formulaire s’affiche pré-rempli avec le titre, la description et l’échéance actuels
+
+Étant donné que je suis sur le formulaire de modification d’une tâche
+Et que je modifie au moins un champ (titre, description ou échéance)
+Quand je valide le formulaire
+Alors les changements sont enregistrés
+Et la tâche mise à jour est immédiatement visible dans la liste
+
+Étant donné que je suis sur le formulaire de modification d’une tâche
+Quand je tente de valider sans renseigner le titre ou l’échéance
+Alors un message d’erreur s’affiche indiquant que le titre et l’échéance sont obligatoires",,,
+"En tant qu’élève, Je veux pouvoir supprimer une tâche que j'ai crée, Afin de garder ma liste à jour.","Étant donné que je consulte la liste des tâches
+Alors je vois une icône ou un bouton ""Supprimer"" sur chaque tâche
+
+Étant donné que je consulte la liste des tâches
+Quand je clique sur le bouton ""Supprimer"" d’une tâche
+Alors une confirmation de suppression m’est demandée
+
+Étant donné qu’une confirmation de suppression est affichée
+Quand je confirme la suppression
+Alors la tâche disparaît de la liste des tâches",,,
+"En tant qu’élève, Je veux ajouter une tâche à ma liste, Afin de m’organiser.","Étant donné que je suis sur la page des tâches
+Alors je vois un bouton ""Ajouter une tâche""
+
+Étant donné que je suis sur la page des tâches
+Quand je clique sur le bouton ""Ajouter une tâche""
+Alors un formulaire s’affiche avec les champs : titre, description, échéance
+
+Étant donné que je suis sur le formulaire d’ajout de tâche
+Et que je renseigne un titre, une description et une échéance valides
+Quand je valide le formulaire
+Alors la nouvelle tâche est enregistrée
+Et elle est visible immédiatement dans la liste des tâches
+
+Étant donné que je suis sur le formulaire d’ajout de tâche
+Quand je tente de valider sans renseigner le titre ou l’échéance
+Alors un message d’erreur s’affiche indiquant que le titre et l’échéance sont obligatoires",,,
+"En tant qu’élève, Je veux voir la liste de mes tâches, Afin de suivre les choses que je dois faire.","Étant donné qu’il existe au moins une tâche enregistrée
+Quand l’utilisateur ouvre la page des tâches
+Alors chaque tâche affichée doit contenir un titre
+Et chaque tâche affichée doit contenir une description
+Et chaque tâche affichée doit contenir une date d’échéance
+Et chaque tâche affichée doit contenir un statut (par exemple : à faire, en cours, terminée)
+
+Étant donné qu’il existe plusieurs tâches avec des dates d’échéance différentes
+Quand l’utilisateur sélectionne le tri par date
+Alors les tâches doivent être affichées dans l’ordre croissant ou décroissant des dates d’échéance
+
+Étant donné qu’il existe plusieurs tâches avec des priorités différentes
+Quand l’utilisateur sélectionne le tri par priorité
+Alors les tâches doivent être affichées en fonction du niveau de priorité défini (par exemple : haute, moyenne, basse)
+
+Étant donné qu’il existe des tâches dont certaines sont marquées comme complétées
+Quand l’utilisateur consulte la liste des tâches
+Alors les tâches complétées doivent être affichées de manière différenciée (par exemple barrées ou colorées)
+Et les tâches non complétées doivent rester affichées normalement",,,
+"En tant qu’étudiant ou tuteur, je veux pouvoir supprimer un événement de mon propre calendrier, afin de retirer un rendez-vous","Étant donné que je suis connecté en tant qu’étudiant ou tuteur
+Et que je vois un événement dans mon calendrier
+Quand je clique sur l’option ""Supprimer"" associée à cet événement
+Alors une confirmation de suppression s’affiche
+Quand je confirme
+Alors l’événement est retiré du calendrier
+Et un message de confirmation est affiché",,,
+"En tant qu’étudiant ou tuteur, je veux pouvoir ajouter un événement à mon propre calendrier, afin d’organiser mes rendez-vous ou activités.","Étant donné que je suis connecté en tant qu’étudiant ou tuteur
+Et que je suis sur la page du calendrier
+Quand je clique sur le bouton ""Ajouter un événement""
+Et que je saisis un titre, une date, une heure et une description
+Et que je valide le formulaire
+Alors l’événement est ajouté à mon calendrier
+Et il s’affiche à la bonne date avec les informations saisies",,,
+"En tant qu’utilisateur, je veux pouvoir cliquer sur un événement à venir, afin d’en consulter les détails complets.","Étant donné qu’un événement à venir est affiché dans le calendrier
+Quand je clique sur cet événement
+Alors une fenêtre ou une page s’ouvre avec les détails complets de l’événement",,,
+"En tant qu’utilisateur, je veux pouvoir identifier visuellement les événements passés, afin de les distinguer des événements à venir.","Étant donné qu’un événement est déjà passé
+Alors il est toujours visible dans le calendrier
+Et il est affiché avec un style visuel différent",,,
+"En tant qu’utilisateur, je veux pouvoir changer la vue du calendrier en jour, semaine ou mois, afin d’adapter l’affichage à mes besoins.","Étant donné que je suis sur la page du calendrier
+Quand je sélectionne une vue (jour, semaine ou mois)
+Alors les événements sont affichés selon la vue choisie",,,
+"En tant qu’utilisateur, je veux voir les informations principales de chaque événement, afin de savoir rapidement de quoi il s’agit.","Étant donné que des événements sont affichés dans le calendrier
+Alors chaque événement affiche le titre, la date, l’heure et la description",,,
+"En tant qu’utilisateur, je veux que le calendrier affiche tous les événements liés à mon compte, afin de visualiser mes rendez-vous à venir et passés.","Étant donné que je suis connecté à mon compte
+Quand j’ouvre la page du calendrier
+Alors tous les événements associés à mon compte sont affichés en vue calendrier",,,
+"En tant qu’utilisateur, je veux pouvoir supprimer l’un de mes messages, afin qu’il ne soit plus visible dans la conversation.","Étant donné que je suis dans une conversation contenant mes messages
+Et que je vois l’option ""Supprimer"" sur l’un de mes messages
+Quand je clique sur ""Supprimer""
+Alors une confirmation est affichée
+Quand je confirme la suppression
+Alors le message est retiré de la conversation
+Et un indicateur ""message supprimé"" peut s'afficher à la place (selon la logique choisie)",,,
+"En tant qu’utilisateur, je veux pouvoir modifier l’un de mes messages, afin de corriger une erreur ou reformuler.","Étant donné que je suis dans une conversation contenant mes messages
+Et que je vois l’icône ou l’option ""Modifier"" sur l’un de mes messages
+Quand je clique dessus et que je modifie le contenu
+Et que je valide la modification
+Alors le message est mis à jour dans la conversation
+Et une mention ""modifié"" apparaît à côté du message",,,
+"En tant qu’utilisateur, je veux pouvoir envoyer un message dans une conversation, afin de communiquer avec mon contact.","Étant donné que je suis dans une conversation ouverte avec un contact
+Et que le champ de saisie est visible
+Quand je saisis un message et que je clique sur ""Envoyer""
+Alors le message s’affiche instantanément dans la conversation
+Et il est horodaté avec la date et l’heure d’envoi",,,
+"En tant qu’utilisateur, je veux pouvoir supprimer un contact de ma liste, afin de ne plus voir ce contact dans le chat.","Étant donné que je suis sur la page de chat
+Et que je vois un contact dans ma liste
+Quand je clique sur ""Supprimer"" pour ce contact
+Alors une confirmation m’est demandée
+Quand je confirme la suppression
+Alors le contact est retiré de la liste
+Et un message m’indique que le contact a été supprimé",,,
+"En tant qu’utilisateur, je veux pouvoir modifier les informations d’un contact existant, afin de les mettre à jour si besoin.","Étant donné que je suis sur la page de chat
+Et que je vois un contact dans ma liste
+Quand je clique sur ""Modifier"" pour ce contact
+Et que je modifie ses informations
+Et que je valide
+Alors les informations du contact sont mises à jour dans la liste
+Et un message de confirmation s’affiche",,,
+"En tant qu’utilisateur, je veux pouvoir ajouter un contact à ma liste, afin de pouvoir discuter avec lui dans le chat.","Étant donné que je suis sur la page de chat
+Et que je clique sur ""Ajouter un contact""
+Quand je saisis les informations du contact et que je valide
+Alors le nouveau contact est ajouté à ma liste
+Et il est visible dans l’interface de chat",,,
+"En tant qu’utilisateur, je veux pouvoir supprimer une conversation de la liste, afin de garder mon interface propre et organisée.","Étant donné que je suis sur la page de chat
+Et que je vois une conversation existante dans la liste
+Quand je clique sur l’option ""Supprimer"" associée à cette conversation
+Alors une confirmation de suppression est affichée
+Quand je confirme la suppression
+Alors la conversation est retirée de la liste
+Et un message m’indique que la conversation a été supprimée avec succès",,,
+"En tant qu’utilisateur, je veux pouvoir démarrer une conversation avec un contact, afin d’échanger des messages avec lui.","Étant donné que je suis sur la page de chat
+Et que je vois la liste de mes contacts
+Quand je clique sur un contact avec qui je n’ai encore jamais discuté
+Alors une nouvelle conversation s’ouvre avec ce contact
+Et l’historique est vide
+Et un champ de saisie de message est affiché",,,
+"En tant qu’utilisateur, je veux voir une notification ou un badge sur les discussions où de nouveaux messages sont présents, afin de savoir où quelqu’un m’a répondu.",Étant donné que j’ai reçu un nouveau message dans une conversationQuand je consulte la liste des discussionsAlors un badge ou un indicateur visuel apparaît sur la conversation concernée,,,
+"En tant qu’utilisateur, je veux pouvoir cliquer sur un contact pour voir l’historique de la discussion, afin de lire ou poursuivre la conversation.","Étant donné que je suis sur la page de chat
+Quand je clique sur un contact ou une discussion
+Alors la fenêtre de conversation s’ouvre avec l’historique des messages échangés avec ce contact",,,
+"En tant qu’utilisateur, je veux voir la liste de mes discussions récentes, afin de reprendre une conversation là où elle s’est arrêtée.","Étant donné que je suis connecté et que j’ai déjà eu des conversations
+Quand j’arrive sur la page de chat
+Alors une liste des dernières discussions s’affiche, triée par ordre chronologique (la plus récente en haut)
+Et chaque entrée contient le nom du contact, un aperçu du dernier message, et l’heure de ce message",,,
+"En tant qu’utilisateur, je veux voir la liste de mes contacts dans l’interface de chat, afin de pouvoir démarrer ou poursuivre une conversation.","Étant donné que je suis connecté à mon compte
+Quand j’accède à la page de chat
+Alors une liste de mes contacts s’affiche
+Et chaque contact est affiché avec son nom, sa photo (si disponible) et son statut (en ligne/hors ligne)",,,
+"En tant qu’utilisateur, je veux être alerté si le mot de passe et sa confirmation ne correspondent pas, afin de les corriger avant validation.",Étant donné que l'utilisateur saisit un mot de passe et une confirmation différentsQuand il valide le formulaireAlors un message d’erreur indique que les mots de passe ne correspondent pasEt le mot de passe n’est pas mis à jour,,,
+"En tant qu’utilisateur sur le formulaire de réinitialisation, je veux être informé si un champ est vide ou si le mot de passe ne respecte pas les règles, afin de corriger ma saisie.","Étant donné que l'utilisateur est sur le formulaire de réinitialisation
+Quand il laisse un champ vide ou saisit un mot de passe non conforme aux règles
+Et qu’il valide le formulaire
+Alors un message d’erreur est affiché pour chaque champ concerné
+Et le mot de passe n’est pas mis à jour",,,
+"En tant qu’utilisateur ayant reçu un lien de réinitialisation, je veux pouvoir définir un nouveau mot de passe, afin de me reconnecter à mon compte.","Étant donné que l'utilisateur a reçu un email de réinitialisation de mot de passe
+Et qu'il a cliqué sur le lien contenu dans l’email
+Quand il saisit un nouveau mot de passe valide et confirme ce mot de passe
+Et qu'il valide le formulaire
+Alors son mot de passe est mis à jour
+Et un message de confirmation est affiché
+Et il peut se connecter avec son nouveau mot de passe",,,
+"En tant qu’utilisateur, je veux être alerté si un champ est vide ou invalide avant l’envoi du formulaire de connexion, afin de corriger mes erreurs.","Étant donné que je suis sur la page de connexion
+Quand je laisse le champ email/identifiant ou le champ mot de passe vide
+Et que je tente de valider le formulaire
+Alors un message d’erreur s’affiche pour chaque champ vide ou invalide
+Et la connexion n’est pas effectuée
+
+Étant donné que je suis sur la page de connexion
+Et que je saisis un email/identifiant et un mot de passe incorrects
+Quand je valide le formulaire
+Alors un message d’erreur m’indique que les identifiants sont incorrects
+Et la connexion n’est pas effectuée",,,
+"En tant qu’utilisateur ayant oublié mon mot de passe, je veux recevoir un email contenant un lien de réinitialisation, afin de pouvoir créer un nouveau mot de passe.","Étant donné que je suis sur la page ""Mot de passe oublié""
+Quand je saisis mon adresse email et que je valide le formulaire
+Alors un email contenant un lien de réinitialisation est envoyé à cette adresse
+Et un message de confirmation s’affiche indiquant que l’email a été envoyé",,,
+"En tant qu’utilisateur, je veux recevoir un email de confirmation après mon inscription, afin de valider que mon compte a bien été créé.","Étant donné que j’ai terminé mon inscription avec succès
+Alors un email de confirmation est envoyé à l’adresse renseignée",,,
+"En tant qu’utilisateur, je veux voir un message de succès après une inscription réussie, afin de savoir que mon compte a bien été créé.","Étant donné que j’ai rempli tous les champs correctement
+Quand je valide le formulaire
+Alors un message de succès est affiché
+Et ce message contient un lien vers la page de connexion",,,
+"En tant qu’utilisateur, je veux être alerté si un champ est vide ou invalide avant l’envoi du formulaire, afin de corriger mes erreurs.","Étant donné que je suis sur le formulaire mot de passe oublié
+Quand je laisse le champ email vide ou saisis une donnée invalide
+Alors un message d’erreur s’affiche pour chaque champ concerné
+
+Étant donné que je suis sur le formulaire mot de passe oublié
+Et que je saisis une adresse email qui n’est associée à aucun compte
+Quand je valide le formulaire
+Alors un message d’erreur m’indique que cette adresse email ne correspond à aucun compte existant",,,
+"En tant qu’utilisateur, je veux voir un formulaire d’inscription, afin de saisir mes informations.","Étant donné que je suis sur la page de création de compte
+Alors le formulaire affiche les champs suivants :
+- Role
+- Identifiant
+- Email
+- Mot de passe
+- Confirmation du mot de passe
+Et je peux choisir un rôle entre ""Élève"" ou ""Bénévole”",,,
+"En tant qu’utilisateur non connecté, je veux accéder via un lien à la page de création de compte afin de compléter mon inscription","Étant donné que l'utilisateur souhaite créer un compte
+Et que le lien ""Création de compte"" est affiché sur la page se connecter
+Quand l'utilisateur clique sur le lien
+Alors il est redirigé vers la page Création de compte",,,
+"En tant qu’utilisateur non connecté, je veux accéder via un lien à la page de Mot de passe oublié afin de pouvoir modifier mon mot de passe","Étant donné que l'utilisateur a oublié son mot de passe
+Et que le lien ""Mot de passe oublié"" est affiché sur la page se connecter
+Quand l'utilisateur clique sur le lien
+Alors il est redirigé vers la page Mot de passe oublié",,,
+"En tant qu’élève ou bénévole, je veux me connecter afin d’accéder aux fonctionnalités du site","Étant donné que le formulaire de connexion contient un champ email ou identifiant, un champ mot de passe, et une case à cocher ""Se souvenir de moi""
+Quand l'utilisateur saisit des identifiants valides et clique sur ""Se connecter""
+Alors il est redirigé vers le tableau de bord
+Et une session utilisateur est créée
+Et si la case ""Se souvenir de moi"" est cochée, l'utilisateur reste connecté même après avoir fermé le navigateur",,,

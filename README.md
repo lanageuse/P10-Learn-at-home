@@ -36,15 +36,23 @@ L’objectif est de fournir une plateforme simple et intuitive pour accompagner 
 - **Déploiement** : Vercel
 ---
 
+## Les user stories
+[Voir les user stories](https://quaint-orange-3a5.notion.site/1e3cd240d97e80398cd2da096b78e4cd?v=1e3cd240d97e80f09fac000ce70d0fca&pvs=4)
+
+## Les cas d'usage
+[Voir les cas d'usage](https://www.figma.com/board/hWE2VQi1Wgqr3akKYtB43Y/Diagramme-cas-d-usages?node-id=0-1&t=dzYFTawscf20cmzz-1)
+
+## Le kanban
+[Voir le kanban](https://www.notion.so/1e3cd240d97e80398cd2da096b78e4cd?v=1e3cd240d97e80f09fac000ce70d0fca)
 
 ## Les différentes pages du projet
-
-* Se connecter
-* Créer un compte
-* Mot de passe publié
-* Réinitialiser son mot de passe
-* Tableau de board
-* Messageries
-* Gestion des tâches
-* Calendrier
-* Mon profil
+voit
+* [Se connecter](https://github.com/lanageuse/P10-Learn-at-home/wiki/Se-connecter)
+* [Créer un compte](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-cr%C3%A9ation-de-compte)
+* [Mot de passe oublié](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-mot-de-passe-oubli%C3%A9)
+* [Réinitialiser son mot de passe](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-de-r%C3%A9initialisation-de-mot-de-passe)
+* [Tableau de board](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-tableau-de-bord)
+* [Messageries](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-de-la-messagerie)
+* [Gestion des tâches](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-de-gestion-des-t%C3%A2ches)
+* [Calendrier](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-de-Calendrier)
+* [Mon profil](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-profil)
