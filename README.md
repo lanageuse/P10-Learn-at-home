@@ -46,7 +46,8 @@ L’objectif est de fournir une plateforme simple et intuitive pour accompagner 
 [Voir le kanban](https://www.notion.so/1e3cd240d97e80398cd2da096b78e4cd?v=1e3cd240d97e80f09fac000ce70d0fca)
 
 ## Les différentes pages du projet
-voit
+[Voir le parcours utilisateur (figma)] (https://www.figma.com/proto/PVs9iH3bp0gIde6padqmaV/P10---Learn-home?node-id=35-500&p=f&t=CS0M48qpaI8eCINV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=35%3A500&show-proto-sidebar=1)
+
 * [Se connecter](https://github.com/lanageuse/P10-Learn-at-home/wiki/Se-connecter)
 * [Créer un compte](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-cr%C3%A9ation-de-compte)
 * [Mot de passe oublié](https://github.com/lanageuse/P10-Learn-at-home/wiki/Page-mot-de-passe-oubli%C3%A9)
