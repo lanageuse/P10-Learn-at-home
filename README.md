@@ -43,7 +43,7 @@ L’objectif est de fournir une plateforme simple et intuitive pour accompagner 
 [Voir les cas d'usage](https://www.figma.com/board/hWE2VQi1Wgqr3akKYtB43Y/Diagramme-cas-d-usages?node-id=0-1&t=dzYFTawscf20cmzz-1)
 
 ## Le kanban
-[Voir le kanban](https://www.notion.so/1e3cd240d97e80398cd2da096b78e4cd?v=1e3cd240d97e80f09fac000ce70d0fca)
+[Voir le kanban](https://github.com/users/lanageuse/projects/1/views/1)
 
 ## Les différentes pages du projet
 [Voir le parcours utilisateur (figma)] (https://www.figma.com/proto/PVs9iH3bp0gIde6padqmaV/P10---Learn-home?node-id=35-500&p=f&t=CS0M48qpaI8eCINV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=35%3A500&show-proto-sidebar=1)
